@@ -1,0 +1,69 @@
+= Interview Manager
+
+
+----
+|---------+-------------+-------------+--------|
+| VERSION | CHANGES     | DATE        | AUTHOR |
+|=========+=============+=============+========|
+| 0.1     | First Draft | 11.Oct.2016 | TGH    |
+|---------+-------------+-------------+--------|
+----
+
+
+== 1 Schedule a candidate
+
+*1 We input* the following
+
+
+----
+|--------------------+--------+-------------------------------------|
+| Field Name         | Type   | Description                         |
+|====================+========+=====================================|
+| candidate          | String | {lastName,FirstName, {contacts: []} |
+| positionAppliedFor | String | could be left blank                 |  
+| requiringCompany   | String | could be left blank                 |
+| dateOfInterview    | Date   |                                     |
+| timeofInterview    | Date   |                                     |
+| interviewers       | Array  | {lastName, firstName, email}        |
+| cv                 | String | Location of CV in the filesystem    |
+| expectedLevel      | String |                                     |
+|--------------------+--------+-------------------------------------|
+----
+
+
+
+
+*2 Send the email*
+
+The email should mimic already the current practice of HR. Which is the following
+
+- Candidate name
+- Date
+- Time
+- Location
+
+== 2 Confirm schedule
+
+The interviewers, who are also recipient of the emails send on step #2 above, may or may not login to the system and then confirm their attendance
+
+
+== 3 Input interview impressions
+
+The interviewer needs to do the following:
+
+Browse is also okay
+
+1. Find the interview record which he is supposed to update. This record is identified by (a) candidate name  (b) position applied for and (c) company requiring the post
+2. Alternatively, when the interviewer logs in, he should see a list of candidates assigned to him (a candidate is assigned to interviewer because he was tagged as one of the interviewers for the candidate). He could simply choose to 'click' the entry and be taken to a view where he can input the results
+3. Input the results in the following format:
+*PROS*
+- list item
+- list item
+*CONS* 
+- list item
+- list item
+*RECOMMENDATION*
+Free style text of recommendation
+*LEVEL ASSESSMENT* : level
+
+

@@ -1,0 +1,18 @@
+{
+  "name": "interviews",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ted Hagos <tedhagos@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tedhagos/interviews",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

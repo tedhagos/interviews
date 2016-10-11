@@ -1,0 +1,19 @@
+{
+  "name": "interviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedhagos/interviews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tedhagos/interviews/issues"
+  },
+  "homepage": "https://github.com/tedhagos/interviews#readme"
+}
